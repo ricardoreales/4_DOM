@@ -8,7 +8,7 @@
     <title>JS_Ricardo_Reales</title>
     <link rel="icon" href="./iconos/logo_gym.png" />
     <link rel="stylesheet" href="./css/main.css" />
-    
+
 </head>
 
 <body>
@@ -16,18 +16,25 @@
     <header>
         <h1>sport - shop</h1>
     </header>
-    <section>
-        <h2>calcula tu IMC (indice de masa corporal)</h2>
+    <section class="imc_container">
+        <div class="titulo_style">
+            <h2>Calcula tu IMC (indice de masa corporal)</h2>
+        </div>
 
-        <input type="text" id="nombre" placeholder="ingresa tu nombre" value="Ricardo">
-        <input type="number" id="peso" placeholder="ingresa tu peso" value="80">
-        <input type="number" id="altura" placeholder="ingresa tu altura" value="1.73">
-        <h2>IMC <span id="imc"></span></h2>
+        <div class="input">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="ingresa tu nombre" value="Ricardo" class="input_style">
+            <label for="peso">Peso (kg)</label>
+            <input type="number" id="peso" placeholder="ingresa tu peso" value="80" class="input_style">
+            <label for="altura">Altura (mts)</label>
+            <input type="number" id="altura" placeholder="ingresa tu altura" value="1.73" class="input_style">
+            <h2 class="h2">IMC = <span id="imc" class="input_style"></span></h2>
+        </div>
     </section>
-    <section>
+    <section class="recomendaciones_container">
         <img src="./imagenes/nutricion_low.webp" alt="nutricion">
-        <div>
-            <h2>recomendaciones segun tu IMC</h2>
+        <div class="recomendaciones_style">
+            <h2>Recomendaciones segun tu IMC:</h2>
             <p id="recomendaciones"></p>
         </div>
     </section>
