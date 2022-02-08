@@ -23,11 +23,16 @@
 
         <div class="input">
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="ingresa tu nombre" value="Ricardo" class="input_style">
+            <input type="text" id="nombre" placeholder="ingresa tu nombre"  class="input_style">
             <label for="peso">Peso (kg)</label>
-            <input type="number" id="peso" placeholder="ingresa tu peso" value="80" class="input_style">
+            <input type="number" id="peso" placeholder="ingresa tu peso"  class="input_style">
             <label for="altura">Altura (mts)</label>
-            <input type="number" id="altura" placeholder="ingresa tu altura" value="1.73" class="input_style">
+            <input type="number" id="altura" placeholder="ingresa tu altura"  class="input_style">
+
+            <input onclick="obtenerImc()" type="button" value="Calcular!">
+            
+        </div>
+        <div>
             <h2 class="h2">IMC = <span id="imc" class="input_style"></span></h2>
         </div>
     </section>
